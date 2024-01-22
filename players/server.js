@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 
 const app = express();
 
@@ -7,7 +7,7 @@ const PORT = 80;
 
 app.get('/', (req, res) => {
   res.json({
-    players: ['Billy', 'John', 'Sarah', 'Emma', 'Mitchell', 'Joe']
+    players: ['Billy', 'John', 'Sarah', 'Emma', 'Mitchell', 'Joker', 'Kate', 'Tate', 'Eric', 'Patty']
   });
 });
 

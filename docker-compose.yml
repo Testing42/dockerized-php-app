@@ -5,6 +5,9 @@ services:
     build: ./players
     ports:
       - 5002:80
+    volumes:
+#below the ":" binds the updates from the host to docker volume
+      - ./players:/app
   site:
     build: ./site
     ports:
@@ -13,3 +16,8 @@ services:
       - players
     volumes:
       - ./site:/src
+
+
+
+
+
