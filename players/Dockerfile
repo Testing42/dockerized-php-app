@@ -6,4 +6,4 @@ RUN npm install
 RUN mv /app/node_modules /node_modules
 COPY . .
 EXPOSE 80
-CMD ["nodemon", "server.js"]
+CMD ["nodemon", "--inspect=0.0.0.0:9229", "--legacy-watch", "server.js"]

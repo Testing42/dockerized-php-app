@@ -8,6 +8,9 @@ services:
     volumes:
 #below the ":" binds the updates from the host to docker volume
       - ./players:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
   site:
     build: ./site
     ports:
